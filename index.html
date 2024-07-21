@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom New Tab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<div class="overlay">
+  <video id="video-background" autoplay loop muted>
+    <source src="(131) _I Am the Danger_ _ Cornered _ Breaking Bad - YouTube - Google Chrome 2024-07-18 20-31-52 (online-video-cutter.com).mp4" type="video/mp4" id="video-source">
+  </video>
+    <div class="shortcuts-bar">
+      <!-- Add your shortcuts here if needed -->
+      <button class="add-shortcut">
+        <span class="add-shorcut-text">Add +</span>
+      </button>
+    </div>
+    <div class="right-side">
+      <h1 class="Time"></h1>
+    </div>
+
+  </div>
+
+
+<form id="add-dialogue-box">
+  <div class="action-bar">
+    <button class="close" type="button">x</button>
+  </div>
+  <div class="form-cont">
+    <h1 class="heading">Shortcut Name</h1>
+    <input type="text" name="Name" id="shrt-name" class="text-box-functional" placeholder="Your Shortcut name">
+    <h1 class="heading">Shortcut URL</h1>
+    <input type="text" name="Url" id="shrt-url" class="text-box-functional" placeholder="Your Shortcut URL">
+    <button type="submit" class="btn" id="confirm">Confirm</button>
+  </div>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>

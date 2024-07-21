@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#search {
+    padding: 20px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.47);
+    flex-grow: 1;
+}
+
+#search:focus {
+    outline: none;
+    border: none;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25%;
+}
+
+#search-form {
+    width: 100%;
+}
+
+#confirm-search {
+    padding: 30px 40px;
+    border: none;
+    color: white;
+    background-color: rgb(14, 19, 27);
+    border-radius: 20px;
+}
+
+.shortcuts-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.shortcut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 150px;
+    padding: 0px 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.47);
+    min-height: 100px;
+    gap: 15px;
+}
+
+.shortcut-name {
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+    padding: 20px 0px;
+}
+
+.shortcut:hover .shortcut-name {
+    color: rgb(255, 81, 81);
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+.video-opener{
+    margin: 20px 0px;
+    color: white;
+}
+
+.Time {
+    color: white; 
+    padding: 30px;
+    font-size: 50px;
+    height: min-content;
+}
+
+.add-shortcut {
+    padding: 0px 20px;
+    min-height: 100px;
+    width: 150px;
+    cursor: pointer;
+    background-color: rgb(19, 21, 29);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.47);
+    border: none;
+}
+
+.add-shorcut-text {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+#add-dialogue-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(19, 19, 19);
+    position: absolute;
+    left: 50%;
+    top: -150%;
+    translate: -50% -50%;
+    transition: 0.3s ease;
+}
+
+.action-bar {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0px 40px;
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.heading {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.text-box-functional {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.47);
+    margin: 40px 0px;
+    font-size: 20px;
+}
+
+.text-box-functional:focus {
+    outline: none;
+    border: none;
+}
+
+.overlay {
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 20px;
+    color: white;
+    background-color: rgb(14, 14, 19);
+    border: 1px solid rgb(73, 142, 165);
+    font-size: 20px;
+    border-radius: 10px;
+    justify-self: flex-end;
+    margin: 20px 0px;
+    cursor: pointer;
+}
